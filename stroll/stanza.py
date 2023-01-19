@@ -99,7 +99,7 @@ class SrlProcessor(Processor):
             features=self.features
         )
         evalloader = DataLoader(
-            eval_set
+            eval_set,
             # batch_size=50,  # TODO make configurable
             # num_workers=2,  # TODO make configurable
             collate_fn=dgl.batch
