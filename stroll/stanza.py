@@ -102,7 +102,7 @@ class SrlProcessor(Processor):
             eval_set
             # batch_size=50,  # TODO make configurable
             # num_workers=2,  # TODO make configurable
-            # collate_fn=dgl.batch
+            collate_fn=dgl.batch
         )
 
         self.net.eval()
